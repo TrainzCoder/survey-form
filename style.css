@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  background: hsla(138, 82%, 69%, 1);
+  background: linear-gradient(135deg, hsla(138, 82%, 69%, 1) 0%, hsla(186, 100%, 50%, 1) 100%);
+}
+
+.container {
+  padding: 20px;
+  width: 60%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container .form-header {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: -20px -20px 30px -20px;
+  padding: 20px 0 5px 0;
+}
+
+.container h1 {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.container p#description {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.container .input-group,
+.container textarea {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.container .input-group label {
+  display: block;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.container .input-group input[type="text"],
+.container .input-group input[type="email"],
+.container .input-group input[type="number"],
+.container .input-group select {
+  padding: 7px 10px 7px 10px;
+  outline: none;
+  font-size: 0.9em;
+  border: none;
+  border-bottom: 2px solid rgb(148, 148, 148);
+  width: 90%;
+  background-color: transparent;
+}
+
+.container .input-group input[type="radio"] {
+  border: 1px solid rgb(148, 148, 148);
+  background-color: transparent;
+}
+
+.container .input-group input[type="radio"] + label {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.container .input-group p {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.container .input-group input[type="checkbox"] + label {
+  display: block;
+  cursor: pointer;
+}
+.container .input-group input[type="checkbox"] {
+  display: none;
+}
+
+.container .input-group input[type="checkbox"] + label::before {
+  content: "\2714";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgb(148, 148, 148);
+  border-radius: 0.2em;
+  padding: 0.3em 0.3em 0.3em 0.3em;
+  text-align: center;
+  vertical-align: middle;
+  color: transparent;
+  margin-right: 5px;
+}
+
+.container .input-group input[type="checkbox"]:checked + label::before {
+  color: white;
+  background: rgb(23, 156, 218);
+  border: 1px solid rgb(23, 156, 218);
+}
+
+.container textarea {
+  font-size: 0.9em;
+  font-family: sans-serif;
+  outline: none;
+  padding: 6px 10px 6px 10px;
+  background-color: transparent;
+}
+
+.container button {
+  outline: none;
+  cursor: pointer;
+  padding: 7px 20px 7px 20px;
+  font-size: 1.05em;
+  border: none;
+  background: rgb(24, 84, 212);
+  color: white;
+  border-radius: 0.2em;
+  transition: all 0.5s;
+}
+
+.container button:hover {
+  margin-left: 5px;
+  box-shadow: 1px 1px 10px rgba(21, 45, 122, 0.2);
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 18px;
+    font-family: sans-serif;
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    transform: translateX(0%);
+    left: 0;
+  }
+  .container .form-header {
+    margin: 0;
+    width: 100%;
+  }
+}

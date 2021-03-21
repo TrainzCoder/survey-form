@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surfey Form Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-header">
+      <h1 id="title">Survey Form for SCALLOP20</h1>
+      <p id="description">Please fill the form for our evaluation</p>
+    </div>
+    <form action="" method="post" id="survey-form">
+      <div class="input-group">
+        <label for="name" id="name-label" >Name :</label>
+        <input type="text"  name="name"  id="name" placeholder="Write your name">
+      </div>
+      <div class="input-group">    
+        <label for="email" id="email-label" >Email :</label>
+        <input type="email"  name="email"  id="email" placeholder="yourmail@mail.com">
+      </div>
+      <div class="input-group">
+        <label for="number" id="number-label" >Age :</label>
+        <input type="number"  name="number"  id="number" min="13" max="16" placeholder="Your age">
+      </div>
+      <div class="input-group">
+        <label for="dropdown">Class :</label>
+        <select name="class" id="dropdown">
+          <option disabled selected>Choose Your Option</option>
+          <option value="x-ipa1">X Science 1</option>
+          <option value="x-ipa2">X Science 2</option>
+          <option value="x-ipa3">X Science 3</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label id="label-gender" >Gender :</label>
+        <input type="radio" id="male" >
+        <label for="male">Male</label>
+        <input type="radio" id="female" >
+        <label for="female">Female</label>
+      </div>
+      <div class="input-group">
+        <p>Favorite Lesson :</p>
+        <input type="checkbox" id="physic" >
+        <label for="physic">Physic</label>
+        <input type="checkbox" id="biology" >
+        <label for="biology">Biology</label>
+        <input type="checkbox" id="chemistry">
+        <label for="chemistry">Chemistry</label>
+        <input type="checkbox" id="english">
+        <label for="english">English</label>
+        <input type="checkbox" id="math">
+        <label for="math">Math</label>
+        <input type="checkbox" id="sport"> 
+        <label for="sport">Sport</label>
+        <input type="checkbox" id="art">
+        <label for="art">Art</label>
+      </div>
+      <textarea id="message" cols="40" rows="5" placeholder="Tell me about you..."></textarea>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div> 
+</body>
+</html>
